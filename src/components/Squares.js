@@ -46,6 +46,8 @@ export default function Squares() {
       setActiveSquares(id);
       //setActiveSquares(null)
     }
+
+    setActiveSquares(id === activeSquares ? null : id); 
   };
 
   return (
