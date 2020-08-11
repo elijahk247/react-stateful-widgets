@@ -43,6 +43,7 @@ export default function Squares() {
       setActiveSquares(id)
     } else {
       setActiveSquares(null);
+      setActiveSquares(id)
     }
   };
 
