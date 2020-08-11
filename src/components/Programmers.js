@@ -36,7 +36,12 @@ export default function Programmers() {
     // Using the currently celebrated id, find inside the programmers slice of state
     // the _name_ of the currently celebrated programmer, and return it.
 
-    return `${awesome.name}`
+    console.log(activeAwesome.name)
+    console.log('hello');
+    console.log(typeof(activeAwesome))
+    console.log(Number(activeAwesome));
+    console.log(awesome[Number(activeAwesome)].name);
+    return `${awesome[Number(activeAwesome)].name}`
   };
 
   const style = {
