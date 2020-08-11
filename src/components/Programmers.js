@@ -41,8 +41,17 @@ export default function Programmers() {
     console.log(typeof(activeAwesome))
     console.log(Number(activeAwesome));
     console.log(awesome[Number(activeAwesome)].name);
-    return `${awesome[Number(activeAwesome)].name}`
+    console.log(awesome)
+
+    const index = Number(activeAwesome) - 1;
+    console.log(index)
+    /*
+    return awesome.find(p => {
+      return p.id - 1 === activeAwesome;
+    })?.name*/
+    return `${awesome[index].name}`
   };
+
 
   const style = {
     fontSize: '1.5em',
